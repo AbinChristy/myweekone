@@ -1,24 +1,16 @@
-﻿
-using Week1ObjectOriented.Interfaces;
+﻿using Week1ObjectOriented.Interfaces;
+using System;
 
 namespace Week1ObjectOriented.Classes
 {
     public static class ShapeColourHelper
     {
-
-        public static Shape AddColour(Shape s)
+        private static readonly string[] Colours = { "Yellow", "Red", "Blue", "Green", "Orange" };
+        private static readonly Random random = new Random();
+        public static Shape AssignRandomColour(Shape s)
         {
-            s.Colour = "Red";
-
+            s.Colour = Colours[random.Next(Colours.Length)];
             return s;
         }
-
-        public static Shape ChangeColour(Shape s)
-        {
-            s.Colour = "Blue";
-
-            return s;
-        }
-
     }
 }

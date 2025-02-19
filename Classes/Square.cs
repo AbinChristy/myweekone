@@ -32,10 +32,10 @@ namespace Week1ObjectOriented.Classes
 
         public int GetFaces()
         {
-            throw new NotImplementedException();
+            return 4;
         }
 
-        public readonly int Sides;
+      
 
     }
 }

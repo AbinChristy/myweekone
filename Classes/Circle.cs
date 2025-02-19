@@ -1,19 +1,17 @@
-﻿using Week1ObjectOriented.Interfaces;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Week1ObjectOriented.Classes
 {
-    public class Circle : Shape, IShape
+    public class Circle : Shape
     {
-        private int radius;
-
-        public Circle(int r)
-        {
-            radius = r;
-        }
-
         public override int GetArea()
         {
-            return (int)(Math.PI * radius * radius); 
+            throw new NotImplementedException();
         }
     }
+
 }
